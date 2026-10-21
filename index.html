@@ -7,7 +7,7 @@
   <meta name="author" content="Carl Jay Matugas" />
   <title>Carl Jay Matugas | Portfolio</title>
 
-  <!-- Favicon (optional — swap for your own) -->
+  <!-- Favicon -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎨</text></svg>" />
 
   <!-- Stylesheet -->
@@ -20,7 +20,7 @@
        HERO SECTION  #home
        ============================ -->
   <section id="home" class="hero">
-    <!-- Background image -->
+    <!-- Sunset Landscape Background -->
     <div class="hero__bg">
       <img src="portfolio web imgs/first cover.png" alt="Sunset landscape background" width="1440" height="810" />
     </div>
@@ -29,7 +29,7 @@
     <div class="hero__card">
       <!-- Profile photo -->
       <div class="hero__photo-wrapper">
-        <img src="portfolio web imgs/Matugas.png" alt="Carl Jay Matugas — Profile Photo" width="440" height="440" />
+        <img src="portfolio web imgs/profile pic.png" alt="Carl Jay Matugas — Profile Photo" width="440" height="440" />
       </div>
 
       <!-- Personal details -->
@@ -44,33 +44,30 @@
         </ul>
       </div>
 
-      <!-- Quick Navigation Buttons -->
+      <!-- Quick Navigation Buttons (New Icons Only) -->
       <div class="nav-buttons">
-        <a href="#github-section" class="btn github-btn">
-          <img src="portfolio web imgs/github button.svg" alt="GitHub icon" />
-          GitHub
+        <a href="https://github.com/carljaymatugas-jpg/carl-portfolio" target="_blank" rel="noopener noreferrer" class="btn github-btn" aria-label="GitHub Repository" title="Visit GitHub Repository">
+          <img src="portfolio web imgs/icons new/github icon.svg" alt="GitHub" />
         </a>
-        <a href="#canva-section" class="btn canva-btn">
-          <img src="portfolio web imgs/canva button.svg" alt="Canva icon" />
-          Canva
+        <a href="#canva-section" class="btn canva-btn" aria-label="Canva Designs" title="Jump to Canva Pubmats">
+          <img src="portfolio web imgs/icons new/canva icon.svg" alt="Canva" />
         </a>
-        <a href="#figma-section" class="btn figma-btn">
-          <img src="portfolio web imgs/figma button.svg" alt="Figma icon" />
-          Figma
+        <a href="#figma-section" class="btn figma-btn" aria-label="Figma Mockups" title="Jump to Figma & App UI">
+          <img src="portfolio web imgs/icons new/figma icon.svg" alt="Figma" />
         </a>
       </div>
 
       <!-- Social media links -->
       <div class="hero__social">
         <span class="hero__social-label">Social media</span>
-        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook">
-          <img src="portfolio web imgs/Fb icon.png" alt="Facebook" />
+        <a href="https://www.facebook.com/carl.jay.923097" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook" title="Facebook Profile">
+          <img src="portfolio web imgs/icons new/fb icon.svg" alt="Facebook" />
         </a>
-        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
-          <img src="portfolio web imgs/IG icon.png" alt="Instagram" />
+        <a href="https://www.instagram.com/cup_of.jay?srtk=ZWcxMGwxbm80M3kx" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram" title="Instagram Profile">
+          <img src="portfolio web imgs/icons new/ig icon.svg" alt="Instagram" />
         </a>
-        <a href="mailto:carljaymatugas@gmail.com" class="social-icon" aria-label="Email">
-          <img src="portfolio web imgs/Email icon.png" alt="Email" />
+        <a href="mailto:carljaymatugas@gmail.com" class="social-icon" aria-label="Email" title="Send Email">
+          <img src="portfolio web imgs/icons new/email icon.svg" alt="Email" />
         </a>
       </div>
     </div>
@@ -78,6 +75,7 @@
 
   <!-- ============================
        CANVA SECTION  #canva-section
+       (Full Slideshow with Arrow Controls)
        ============================ -->
   <section id="canva-section" class="portfolio-section">
     <div class="container">
@@ -90,60 +88,101 @@
         </p>
       </div>
 
-      <div class="image-grid">
-        <!-- Card 1 -->
-        <div class="image-card reveal">
-          <img src="portfolio web imgs/Canva pic 1.png" alt="Philippine Independence Day poster for TechnoGadget Organization" loading="lazy" />
-          <div class="image-card__overlay">
-            <span class="image-card__title">Independence Day Pubmat</span>
+      <!-- Canva Slideshow -->
+      <div class="slideshow reveal" id="canva-slideshow" data-slideshow>
+        <div class="slideshow__viewport">
+          <!-- Previous Arrow -->
+          <button class="slideshow__arrow slideshow__arrow--prev" data-slide-prev aria-label="Previous Slide">
+            <img src="portfolio web imgs/icons new/Arrow 1.svg" alt="Previous" />
+          </button>
+
+          <!-- Slides Track -->
+          <div class="slideshow__track" data-slide-track>
+            <!-- Slide 1 -->
+            <div class="slideshow__slide is-active">
+              <div class="slideshow__media">
+                <img src="portfolio web imgs/Canva pic 1.png" alt="Philippine Independence Day poster for TechnoGadget Organization" />
+              </div>
+              <div class="slideshow__info">
+                <h3 class="slideshow__title">Independence Day Pubmat</h3>
+                <p class="slideshow__desc">Commemorative Independence Day pubmat layout for TechnoGadget Organization.</p>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="slideshow__slide">
+              <div class="slideshow__media">
+                <img src="portfolio web imgs/Canva pic 2.png" alt="Canva design sample — event poster" />
+              </div>
+              <div class="slideshow__info">
+                <h3 class="slideshow__title">Event Poster Design</h3>
+                <p class="slideshow__desc">Dynamic event announcement featuring structured typographic layout and custom graphics.</p>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="slideshow__slide">
+              <div class="slideshow__media">
+                <img src="portfolio web imgs/Canva pic 3.png" alt="Canva design sample — promotional graphic" />
+              </div>
+              <div class="slideshow__info">
+                <h3 class="slideshow__title">Promotional Graphic</h3>
+                <p class="slideshow__desc">High-contrast marketing asset optimized for digital campaigns and social channels.</p>
+              </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="slideshow__slide">
+              <div class="slideshow__media">
+                <img src="portfolio web imgs/Canva pic 4.png" alt="Canva design sample — social media post" />
+              </div>
+              <div class="slideshow__info">
+                <h3 class="slideshow__title">Social Media Post</h3>
+                <p class="slideshow__desc">Clean engagement graphic designed for modern feeds with brand-aligned palette.</p>
+              </div>
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="slideshow__slide">
+              <div class="slideshow__media">
+                <img src="portfolio web imgs/Canva pic 5.png" alt="Canva design sample — infographic" />
+              </div>
+              <div class="slideshow__info">
+                <h3 class="slideshow__title">Infographic Design</h3>
+                <p class="slideshow__desc">Visual data guide breaking down organizational updates and student achievements.</p>
+              </div>
+            </div>
+
+            <!-- Slide 6 -->
+            <div class="slideshow__slide">
+              <div class="slideshow__media">
+                <img src="portfolio web imgs/Canva pic 7.png" alt="Canva design sample — flyer" />
+              </div>
+              <div class="slideshow__info">
+                <h3 class="slideshow__title">Flyer & Announcement</h3>
+                <p class="slideshow__desc">Eye-catching promotional flyer layout with vibrant colors and bold typography.</p>
+              </div>
+            </div>
           </div>
+
+          <!-- Next Arrow -->
+          <button class="slideshow__arrow slideshow__arrow--next" data-slide-next aria-label="Next Slide">
+            <img src="portfolio web imgs/icons new/Arrow 1.svg" alt="Next" />
+          </button>
         </div>
 
-        <!-- Card 2 -->
-        <div class="image-card reveal">
-          <img src="portfolio web imgs/Canva pic 2.png" alt="Canva design sample — event poster" loading="lazy" />
-          <div class="image-card__overlay">
-            <span class="image-card__title">Event Poster Design</span>
-          </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="image-card reveal">
-          <img src="portfolio web imgs/Canva pic 3.png" alt="Canva design sample — promotional graphic" loading="lazy" />
-          <div class="image-card__overlay">
-            <span class="image-card__title">Promotional Graphic</span>
-          </div>
-        </div>
-
-        <!-- Card 4 -->
-        <div class="image-card reveal">
-          <img src="portfolio web imgs/Canva pic 4.png" alt="Canva design sample — social media post" loading="lazy" />
-          <div class="image-card__overlay">
-            <span class="image-card__title">Social Media Post</span>
-          </div>
-        </div>
-
-        <!-- Card 5 -->
-        <div class="image-card reveal">
-          <img src="portfolio web imgs/Canva pic 5.png" alt="Canva design sample — infographic" loading="lazy" />
-          <div class="image-card__overlay">
-            <span class="image-card__title">Infographic Design</span>
-          </div>
-        </div>
-
-        <!-- Card 6 -->
-        <div class="image-card reveal">
-          <img src="portfolio web imgs/Canva pic 7.png" alt="Canva design sample — flyer" loading="lazy" />
-          <div class="image-card__overlay">
-            <span class="image-card__title">Flyer Design</span>
-          </div>
+        <!-- Slideshow Controls (Dots + Counter) -->
+        <div class="slideshow__controls">
+          <div class="slideshow__dots" data-slide-dots></div>
+          <span class="slideshow__counter" data-slide-counter>1 / 6</span>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ============================
-       FIGMA SECTION  #figma-section
+       FIGMA / APP UI SECTION  #figma-section
+       (Full Slideshow with Arrow Controls)
        ============================ -->
   <section id="figma-section" class="portfolio-section">
     <div class="container">
@@ -156,37 +195,104 @@
         </p>
       </div>
 
-      <div class="image-grid">
-        <!-- Card 1 — Portfolio Figma -->
-        <div class="image-card reveal">
-          <img src="portfolio web imgs/Figma pic 3.png" alt="Carl's Portfolio — Figma design file showing hero, GitHub, and Canva sections" loading="lazy" />
-          <div class="image-card__overlay">
-            <span class="image-card__title">Portfolio Website — Figma</span>
+      <!-- App UI Slideshow -->
+      <div class="slideshow reveal" id="figma-slideshow" data-slideshow>
+        <div class="slideshow__viewport">
+          <!-- Previous Arrow -->
+          <button class="slideshow__arrow slideshow__arrow--prev" data-slide-prev aria-label="Previous Slide">
+            <img src="portfolio web imgs/icons new/Arrow 1.svg" alt="Previous" />
+          </button>
+
+          <!-- Slides Track -->
+          <div class="slideshow__track" data-slide-track>
+            <!-- Slide 1: NatureFlow Splash -->
+            <div class="slideshow__slide is-active">
+              <div class="slideshow__media">
+                <img src="portfolio web imgs/app ui new 3.jpg" alt="NatureFlow — Splash & Welcome Screen" />
+              </div>
+              <div class="slideshow__info">
+                <h3 class="slideshow__title">NatureFlow — Welcome Screen</h3>
+                <p class="slideshow__desc">Mindful task and daily habit tracker app with calming organic aesthetics.</p>
+              </div>
+            </div>
+
+            <!-- Slide 2: NatureFlow Task Garden -->
+            <div class="slideshow__slide">
+              <div class="slideshow__media">
+                <img src="portfolio web imgs/app ui new.jpg" alt="NatureFlow — Task Garden UI" />
+              </div>
+              <div class="slideshow__info">
+                <h3 class="slideshow__title">Task Garden — Active Tasks</h3>
+                <p class="slideshow__desc">Plant-growth gamified task dashboard featuring status cards, prune actions, and bottom navigation.</p>
+              </div>
+            </div>
+
+            <!-- Slide 3: NatureFlow New Growth -->
+            <div class="slideshow__slide">
+              <div class="slideshow__media">
+                <img src="portfolio web imgs/app ui new 2.jpg" alt="NatureFlow — New Growth task form" />
+              </div>
+              <div class="slideshow__info">
+                <h3 class="slideshow__title">New Growth — Task Creation Form</h3>
+                <p class="slideshow__desc">Intuitive input modal with task categorization, cycle status selector (Pending, Ongoing, Finished), and planting action.</p>
+              </div>
+            </div>
+
+            <!-- Slide 4: Purr & Pour Café -->
+            <div class="slideshow__slide">
+              <div class="slideshow__media">
+                <img src="portfolio web imgs/figma pic new.png" alt="Purr & Pour Café — Web UI Design" />
+              </div>
+              <div class="slideshow__info">
+                <h3 class="slideshow__title">Purr & Pour Café — Web UI</h3>
+                <p class="slideshow__desc">Cozy cat café website design featuring whimsical branding, photo cards, and social links.</p>
+              </div>
+            </div>
+
+            <!-- Slide 5: Cup of Jay -->
+            <div class="slideshow__slide">
+              <div class="slideshow__media">
+                <img src="portfolio web imgs/figma pic new 2.png" alt="Cup of Jay — Coffee Shop Homepage" />
+              </div>
+              <div class="slideshow__info">
+                <h3 class="slideshow__title">Cup of Jay — Coffee Shop Prototype</h3>
+                <p class="slideshow__desc">Warm artisanal coffee shop website with custom brand logo, product carousel, and testimonial section.</p>
+              </div>
+            </div>
+
+            <!-- Slide 6: Sidlakgo Tourism App -->
+            <div class="slideshow__slide">
+              <div class="slideshow__media">
+                <img src="portfolio web imgs/Figma pic 2.png" alt="Sidlakgo Tourism Mobile App" />
+              </div>
+              <div class="slideshow__info">
+                <h3 class="slideshow__title">Sidlakgo — Tourism Mobile App</h3>
+                <p class="slideshow__desc">Multi-screen mobile guide showcasing regional destinations, interactive maps, and travel recommendations.</p>
+              </div>
+            </div>
+
+            <!-- Slide 7: Portfolio Figma Wireframe -->
+            <div class="slideshow__slide">
+              <div class="slideshow__media">
+                <img src="portfolio web imgs/Figma pic 3.png" alt="Carl's Portfolio — Figma Design System" />
+              </div>
+              <div class="slideshow__info">
+                <h3 class="slideshow__title">Carl's Portfolio — Figma Prototype</h3>
+                <p class="slideshow__desc">The complete design board and UI prototype created in Figma that laid the foundation for this website.</p>
+              </div>
+            </div>
           </div>
+
+          <!-- Next Arrow -->
+          <button class="slideshow__arrow slideshow__arrow--next" data-slide-next aria-label="Next Slide">
+            <img src="portfolio web imgs/icons new/Arrow 1.svg" alt="Next" />
+          </button>
         </div>
 
-        <!-- Card 2 — Cup of Jay -->
-        <div class="image-card reveal">
-          <img src="portfolio web imgs/Figma pic 1.png" alt="Cup of Jay — coffee shop website UI design in Figma" loading="lazy" />
-          <div class="image-card__overlay">
-            <span class="image-card__title">Cup of Jay — Website UI</span>
-          </div>
-        </div>
-
-        <!-- Card 3 — Sidlakgo -->
-        <div class="image-card reveal">
-          <img src="portfolio web imgs/Figma pic 2.png" alt="Sidlakgo tourism app — multi-screen Figma design" loading="lazy" />
-          <div class="image-card__overlay">
-            <span class="image-card__title">Sidlakgo — Tourism App</span>
-          </div>
-        </div>
-
-        <!-- Card 4 — NatureFlow App UI -->
-        <div class="image-card reveal">
-          <img src="portfolio web imgs/App Ui pic.png" alt="NatureFlow — task management mobile app UI" loading="lazy" />
-          <div class="image-card__overlay">
-            <span class="image-card__title">NatureFlow — Mobile App UI</span>
-          </div>
+        <!-- Slideshow Controls (Dots + Counter) -->
+        <div class="slideshow__controls">
+          <div class="slideshow__dots" data-slide-dots></div>
+          <span class="slideshow__counter" data-slide-counter>1 / 7</span>
         </div>
       </div>
     </div>
@@ -207,30 +313,31 @@
       </div>
 
       <div class="github-showcase">
-        <!-- Repo card — screenshot -->
+        <!-- Repo card — carl-portfolio -->
         <div class="github-card reveal">
-          <img src="portfolio web imgs/Github pic.png" alt="Mobile Task Application repository on GitHub" loading="lazy" />
+          <div class="github-card__header" style="background: linear-gradient(135deg, #242428 0%, #121214 100%); padding: 2.25rem 1.5rem; text-align: center; border-bottom: 1px solid var(--clr-glass-border);">
+            <img src="portfolio web imgs/icons new/github icon.svg" alt="GitHub Logo" style="max-height: 64px; width: auto; margin: 0 auto; filter: drop-shadow(0 4px 12px rgba(0,0,0,0.5));" />
+          </div>
           <div class="github-card__body">
-            <h3 class="github-card__title">Mobile-Task-Application</h3>
+            <h3 class="github-card__title">carl-portfolio</h3>
             <p class="github-card__desc">
-              A React Native task management app built with Expo — featuring garden-themed UI, 
-              task CRUD operations, and an intuitive mobile experience.
+              My personal portfolio repository containing the complete source code, design assets, 
+              responsive stylesheets, and interactive slideshow components.
             </p>
-            <a href="https://github.com/carljaymatugas-jpg" target="_blank" rel="noopener noreferrer" class="github-card__link">
+            <a href="https://github.com/carljaymatugas-jpg/carl-portfolio" target="_blank" rel="noopener noreferrer" class="github-card__link">
               View on GitHub
               <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd" /></svg>
             </a>
           </div>
         </div>
 
-        <!-- Placeholder for more repos -->
+        <!-- More Repos Card -->
         <div class="github-card reveal">
           <div class="github-card__body" style="padding: 2.5rem; text-align: center;">
             <div style="font-size: 3rem; margin-bottom: 1rem;">🚀</div>
-            <h3 class="github-card__title">More Projects Coming Soon</h3>
+            <h3 class="github-card__title">Explore More Projects</h3>
             <p class="github-card__desc">
-              Stay tuned for more web and mobile projects as I continue to build 
-              and push code to GitHub. Follow my profile for updates!
+              Check out my GitHub profile for mobile apps, coursework code, and upcoming projects.
             </p>
             <a href="https://github.com/carljaymatugas-jpg" target="_blank" rel="noopener noreferrer" class="github-card__link">
               Visit My GitHub Profile
@@ -254,16 +361,16 @@
         </div>
 
         <div class="footer__links">
-          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-            <img src="portfolio web imgs/Fb icon.png" alt="" />
+          <a href="https://www.facebook.com/carl.jay.923097" target="_blank" rel="noopener noreferrer">
+            <img src="portfolio web imgs/icons new/fb icon.svg" alt="" />
             Facebook
           </a>
-          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-            <img src="portfolio web imgs/IG icon.png" alt="" />
+          <a href="https://www.instagram.com/cup_of.jay?srtk=ZWcxMGwxbm80M3kx" target="_blank" rel="noopener noreferrer">
+            <img src="portfolio web imgs/icons new/ig icon.svg" alt="" />
             Instagram
           </a>
           <a href="mailto:carljaymatugas@gmail.com">
-            <img src="portfolio web imgs/Email icon.png" alt="" />
+            <img src="portfolio web imgs/icons new/email icon.svg" alt="" />
             carljaymatugas@gmail.com
           </a>
         </div>
@@ -279,14 +386,103 @@
        SCRIPTS
        ============================ -->
   <script>
+    /* ---------- Slideshow Component ---------- */
+    function initSlideshows() {
+      document.querySelectorAll('[data-slideshow]').forEach((slideshowEl) => {
+        const slides = slideshowEl.querySelectorAll('.slideshow__slide');
+        const prevBtn = slideshowEl.querySelector('[data-slide-prev]');
+        const nextBtn = slideshowEl.querySelector('[data-slide-next]');
+        const dotsContainer = slideshowEl.querySelector('[data-slide-dots]');
+        const counterEl = slideshowEl.querySelector('[data-slide-counter]');
+        if (!slides.length) return;
+
+        let currentIndex = 0;
+
+        // Build navigation dots
+        if (dotsContainer) {
+          dotsContainer.innerHTML = '';
+          slides.forEach((_, i) => {
+            const dot = document.createElement('button');
+            dot.className = `slideshow__dot ${i === 0 ? 'is-active' : ''}`;
+            dot.setAttribute('aria-label', `Go to slide ${i + 1}`);
+            dot.addEventListener('click', (e) => {
+              e.preventDefault();
+              goTo(i);
+            });
+            dotsContainer.appendChild(dot);
+          });
+        }
+
+        function update() {
+          slides.forEach((slide, i) => {
+            slide.classList.toggle('is-active', i === currentIndex);
+          });
+          if (dotsContainer) {
+            dotsContainer.querySelectorAll('.slideshow__dot').forEach((dot, i) => {
+              dot.classList.toggle('is-active', i === currentIndex);
+            });
+          }
+          if (counterEl) {
+            counterEl.textContent = `${currentIndex + 1} / ${slides.length}`;
+          }
+        }
+
+        function goTo(index) {
+          currentIndex = (index + slides.length) % slides.length;
+          update();
+        }
+
+        prevBtn?.addEventListener('click', (e) => {
+          e.preventDefault();
+          goTo(currentIndex - 1);
+        });
+
+        nextBtn?.addEventListener('click', (e) => {
+          e.preventDefault();
+          goTo(currentIndex + 1);
+        });
+
+        // Touch swipe support
+        let startX = 0;
+        slideshowEl.addEventListener('touchstart', (e) => {
+          startX = e.changedTouches[0].screenX;
+        }, { passive: true });
+
+        slideshowEl.addEventListener('touchend', (e) => {
+          const diffX = e.changedTouches[0].screenX - startX;
+          if (Math.abs(diffX) > 45) {
+            if (diffX < 0) goTo(currentIndex + 1);
+            else goTo(currentIndex - 1);
+          }
+        }, { passive: true });
+
+        // Keyboard arrow support when focused
+        slideshowEl.setAttribute('tabindex', '0');
+        slideshowEl.addEventListener('keydown', (e) => {
+          if (e.key === 'ArrowLeft') {
+            goTo(currentIndex - 1);
+            e.preventDefault();
+          } else if (e.key === 'ArrowRight') {
+            goTo(currentIndex + 1);
+            e.preventDefault();
+          }
+        });
+
+        update();
+      });
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initSlideshows);
+    } else {
+      initSlideshows();
+    }
+
     /* ---------- Scroll-reveal fallback (IntersectionObserver) ---------- */
     (() => {
-      // If CSS scroll-driven animations are supported, skip JS reveal
       if (CSS.supports('(animation-timeline: view()) and (animation-range: entry)')) return;
 
       const revealEls = document.querySelectorAll('.reveal');
-
-      // Add JS class & remove native reveal
       revealEls.forEach((el, i) => {
         el.classList.add('reveal--js');
         el.classList.add(`stagger-${(i % 6) + 1}`);
